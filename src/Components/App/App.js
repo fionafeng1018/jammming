@@ -11,38 +11,9 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      searchResults: [
-        {
-          id: 1,
-          name: 'Jay',
-          artist: 'Jay Chou',
-          album: 'Fantacy'
-        }, 
-        {
-          id: 2,
-          name: 'JJ',
-          artist: 'JJ Lin',
-          album: 'Jiangnan'
-        }, {
-          id: 3,
-          name: 'Tylar',
-          artist: 'Love',
-          album: 'April'
-        }],
-
+      searchResults: [],
       playlistName: "Play List Name",
-
-      playlistTracks:[{
-          id: 1,
-          name: 'Track 1',
-          artist: 'A',
-          album: 'Album 1'
-      }, {
-        id: 2,
-        name: 'Track 2',
-        artist: 'B',
-        album: 'Album 2'
-      }, ]
+      playlistTracks:[]
     }
 
     this.addTrack = this.addTrack.bind(this);
